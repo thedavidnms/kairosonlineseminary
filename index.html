@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Inscripción - Seminario Teológico Kairos Online</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #f4f4f4;
+        }
+        .header-container {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 20px;
+            border-bottom: 2px solid #ccc;
+            padding-bottom: 10px;
+        }
+        .header-container h1 {
+            margin: 0;
+            font-size: 1.5em;
+            color: #333;
+        }
+        .logo-space img {
+            max-width: 80px; /* Ajusta el tamaño del logo según sea necesario */
+            height: auto;
+        }
+        form {
+            background: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            max-width: 500px;
+            margin: auto;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+        input[type="text"],
+        input[type="tel"],
+        input[type="email"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box; /* Asegura que el padding no aumente el ancho total */
+        }
+        button[type="submit"] {
+            background-color: #007bff;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 1em;
+        }
+        button[type="submit"]:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="header-container">
+        <h1>Seminario Teológico Kairos Online</h1>
+        <div class="logo-space">
+            <a href="https://ibb.co/67PRWsxT"><img src="https://i.ibb.co/4nTZVNGX/logokairos.jpg" alt="logokairos" border="0"></a>
+        </div>
+        
+    </div>
+
+    <form action="https://formspree.io/f/manpknpe" method="POST">
+        
+        <label for="nombre_completo">Nombre completo:</label>
+        <input type="text" id="nombre_completo" name="Nombre Completo" required>
+
+        <label for="telefono">Número de teléfono:</label>
+        <input type="tel" id="telefono" name="Número de Teléfono" required>
+
+        <label for="residencia">Lugar de residencia:</label>
+        <input type="text" id="residencia" name="Lugar de Residencia" required>
+
+        <label for="correo">Correo electrónico:</label>
+        <input type="email" id="correo" name="_replyto" required>
+        
+        <label for="pastor">Nombre del pastor:</label>
+        <input type="text" id="pastor" name="Nombre del Pastor" required>
+
+        <label for="iglesia">Iglesia a la que pertenece:</label>
+        <input type="text" id="iglesia" name="Iglesia" required>
+
+        <label for="escolar">Grado escolar cursado/ Nivel secundaria:</label>
+        <input type="text" id="grado" name="grado" required>
+
+        <label for="estudiosbiblicos">Estudios biblicos cursados, cual?:</label>
+        <input type="text" id="estudiosbiblicos" name="estudiosbiblicos" required>
+        
+        <label for="hacecuantoaceptoajesus">¿Hace cuantos años aceptó al Señor Jesus en su corazón?:</label>
+        <input type="text" id="hacecuantoaceptoajesus" name="hacecuantoaceptoajesus" required>
+
+        <button type="submit">Enviar Inscripción</button>
+    </form>
+
+</body>
+
+</html>
